@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
-             x:Class="TakeFoto.PaginaPrincipal"
-             Title="App A.J MEI">
+<ContentPage
+    x:Class="TakeFoto.PaginaPrincipal"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+    Title="App A.J MEI">
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
             Padding="30,0"
-            VerticalOptions="Fill"
-            HorizontalOptions="Fill">
-            <cv:CameraView x:Name="cameraView" WidthRequest="300" HeightRequest="300" CamerasLoaded="cameraView_CamerasLoaded"/>
-            <Button Text="Smile:" Clicked="Button_Clicked"></Button>
-            <Image x:Name="mySmage" WidthRequest="200" HeightRequest="200"></Image>
+            HorizontalOptions="Fill"
+            Spacing="25"
+            VerticalOptions="Fill">
+            <cv:CameraView
+                x:Name="cameraView"
+                CamerasLoaded="cameraView_CamerasLoaded"
+                Margin="0,20"
+                HeightRequest="200"
+                WidthRequest="200" />
+            <Button Clicked="Button_Clicked" Text="Tirar Foto" />
+            <Image
+                x:Name="mySmage"
+                HeightRequest="200"
+                WidthRequest="200" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

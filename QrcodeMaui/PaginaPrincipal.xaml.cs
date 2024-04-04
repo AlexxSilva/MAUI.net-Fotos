@@ -4,10 +4,10 @@ namespace TakeFoto;
 
 public partial class PaginaPrincipal : ContentPage
 {
-	public PaginaPrincipal()
-	{
-		InitializeComponent();
-	}
+    public PaginaPrincipal()
+    {
+        InitializeComponent();
+    }
 
 
     private async void Tirarfoto(object sender, EventArgs e)
